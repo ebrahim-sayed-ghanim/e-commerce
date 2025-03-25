@@ -1,0 +1,93 @@
+header {
+    background-color: var(--footer-bg);
+    color: var(--white);
+    padding-block: 1.4rem;
+    height: 20px;
+
+    & .sign-in,
+    .register {
+        color: var(--white);
+    }
+
+    .logo .fa-solid {
+        font-size: 2rem;
+        color: var(--white) !important;
+    }
+
+    & .sign-in:hover,
+    .register:hover {
+        border: 1px solid rgb(152, 154, 189);
+        padding: 0.5rem 1.1rem;
+    }
+
+    & .sign-in i,
+    .register i {
+        color: var(--white);
+    }
+
+}
+
+body {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    align-items: center;
+}
+
+@media (max-width: 412px) {
+    main {
+        flex-wrap: wrap;
+    }
+
+}
+
+main {
+    max-width: 800px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px -1px 1px -1px, rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px;
+    border-radius: 0.4rem;
+    background-color: var(--white);
+  
+
+    & button {
+        margin-right: 0.88rem;
+        background-color: var(--cart);
+        color: #fff;
+        border-radius: 4px;
+        padding: 6px 8px;
+        font-size: 1rem;
+        gap: 0.33rem;
+        margin-top: 20px;
+    }
+
+    & button .fa-solid {
+        color: var(--white);
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .flex {
+        justify-content: space-between;
+
+        & h1 {
+            display: block;
+            font-size: 2em;
+            margin-block-start: 0.67em;
+            margin-block-end: 0.67em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            font-weight: bold;
+            unicode-bidi: isolate;
+        }
+
+        & .price {
+            font-size: 1.22rem;
+            font-weight: bold;
+            color: var(--color-icon);
+        }
+    }
+
+    .content {
+        margin-inline: 1.1rem;
+    }
+}

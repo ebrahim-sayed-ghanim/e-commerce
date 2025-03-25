@@ -1,0 +1,124 @@
+header {
+    background-color: var(--footer-bg);
+    color: var(--white);
+    padding-block: 1.4rem;
+    height: 20px;
+
+    & .fa-solid {
+        color: var(--color);
+    }
+
+    & .logo .fa-solid {
+        font-size: 2rem;
+    }
+
+    & .sign-in:hover,
+    .register:hover {
+        border: 1px solid rgb(152, 154, 189);
+        padding: 0.5rem 1.1rem;
+    }
+
+}
+
+body {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    align-items: center;
+}
+
+main {
+    text-align: center;
+
+
+}
+
+article.product {
+    justify-content: space-around;
+    max-width: 500px;
+    margin-inline: auto;
+    border-top: 2px solid var(--cart);
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px -1px, rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px;
+
+    & .fa-solid {
+        color: red;
+        font-size: 1.3rem;
+    }
+
+    & button.decrease {
+        color: var(--cart);
+        font-size: 1.9rem;
+    }
+
+    & p.price-title {
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    & p.quantity {
+        background-color: var(--cart);
+        color: var(--white);
+        font-size: 0.8rem;
+        height: 21px;
+        width: 21px;
+        border-radius: 50%;
+        justify-content: center;
+        margin-inline: 0.4rem;
+    }
+
+    & button.blus {
+        color: var(--cart);
+        font-size: 1.4rem;
+    }
+}
+
+button.clear-cart {
+    background-color: var(--cart);
+    color: var(--white);
+    margin-top: 1rem;
+    border-radius: 4px;
+    padding: 6px 8px;
+    font-size: 1.2rem;
+}
+
+section.summary {
+    background-color: var(--white);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 1px -1px, rgba(0, 0, 0, 0.14) 0px 1px 1px 0px, rgba(0, 0, 0, 0.12) 0px 1px 3px 0px;
+    width: 233px;
+    margin-inline: auto;
+    margin-top: 2.5rem;
+    border-radius: 4px;
+
+    & h1 {
+        font-size: 1.2rem;
+        padding-block: 0.5rem;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.12);
+    }
+
+    & .flex {
+        align-items: center;
+        justify-content: space-between;
+        padding-inline: 15px;
+        padding-block: 10px;
+    }
+
+    & a.checkout {
+        width: 100%;
+        background-color: var(--cart);
+        color: var(--white);
+        padding-block: 0.5rem;
+        font-size: 0.9rem;
+        font-weight: 500;
+
+
+        scale: 1;
+    }
+
+    & button.sign {
+        padding-block: 0.5rem;
+        color: var(--color-icon);
+        font-size: 0.9rem;
+    }
+
+}
